@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>You're booked · The Delegated Brain</title>
+<meta name="description" content="Your delegation call is booked. Here is what happens next.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head><body>
+<!-- THE DELEGATED BRAIN · thank-you page (shown after the delegation call is booked).
+     GoHighLevel: set the calendar's "redirect after booking" to this page, or paste this block into one Custom JS/HTML element.
+     Edit TDB_TY below: the call length and the reply address are the only things to confirm. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;500;600&display=swap');
+html,body{margin:0;background:#101417}
+#ty{--black:#101417;--card:#171C21;--line:#262C33;--gold:#FFD24D;--white:#F7F7F5;--grey:#A3A7AD;background:var(--black);color:var(--white);font-family:'Raleway',sans-serif;font-size:18px;line-height:1.6;overflow:hidden}
+#ty *{box-sizing:border-box;margin:0;padding:0}
+#ty h1,#ty h2,#ty h3,#ty .eyebrow,#ty .btn{font-family:'Poppins',sans-serif}
+#ty h1{font-weight:800;font-size:clamp(36px,5.6vw,60px);line-height:1.06;letter-spacing:-.02em}
+#ty h2{font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.12;letter-spacing:-.015em;margin-bottom:14px}
+#ty h3{font-weight:700;font-size:19px;line-height:1.3;margin-bottom:6px}
+#ty .gold{color:var(--gold)}
+#ty .wrap{max-width:900px;margin:0 auto;padding:0 20px}
+#ty section{padding:72px 0;border-top:1px solid var(--line)}
+#ty .eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+#ty .lead{font-size:20px;color:var(--grey);max-width:640px}
+#ty header{border-bottom:1px solid var(--line)}
+#ty header .wrap{display:flex;align-items:center;height:68px}
+#ty .brand{display:flex;align-items:center;gap:10px;font:700 18px 'Poppins';color:var(--white);text-decoration:none}
+#ty .brand svg{width:44px;height:34px}
+#ty .hero{border-top:0;padding:72px 0 80px;text-align:center;background-color:var(--black);background-image:url(assets/bg-lights.jpg);background-size:cover;background-position:center}
+#ty .hero .lead{margin:20px auto 0}
+#ty .check{width:72px;height:72px;border-radius:50%;background:rgba(255,210,77,.12);border:1.5px solid var(--gold);display:grid;place-items:center;margin:0 auto 26px;box-shadow:0 0 60px rgba(255,210,77,.25)}
+#ty .check svg{width:34px;height:34px;stroke:var(--gold);fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+#ty .pill{display:inline-block;margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 20px;font:500 15px 'Raleway';color:var(--grey)}
+#ty .pill b{color:var(--white);font-weight:600}
+#ty .tl{list-style:none;position:relative;margin-top:36px;display:grid;gap:0}
+#ty .tl:before{content:'';position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:var(--line)}
+#ty .tl li{position:relative;padding:0 0 34px 64px}
+#ty .tl li:last-child{padding-bottom:0}
+#ty .tl .n{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--card);border:2px solid var(--line);color:var(--white);font:700 17px 'Poppins';display:grid;place-items:center}
+#ty .tl li.now .n{background:var(--gold);border-color:var(--gold);color:#0A0B0D}
+#ty .tl .when{font:600 12px 'Poppins';letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+#ty .tl p{color:var(--grey);font-size:16px}
+#ty .tl p b{color:var(--white);font-weight:600}
+#ty .grid{display:grid;gap:20px;grid-template-columns:repeat(2,1fr);margin-top:30px}
+#ty .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+#ty .card p,#ty .card li{color:var(--grey);font-size:16px}
+#ty .card ul{list-style:none;display:grid;gap:10px;margin-top:6px}
+#ty .card li{display:flex;gap:12px}
+#ty .card li:before{content:'';flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-top:9px}
+#ty .btn{display:inline-block;background:var(--gold);color:#0A0B0D;font-weight:600;font-size:16px;padding:16px 30px;border-radius:999px;text-decoration:none}
+#ty .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,210,77,.3)}
+#ty .note{font-size:14px;color:var(--grey);margin-top:12px}
+#ty .ps{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:var(--grey);font-size:16px}
+#ty .ps b{color:var(--white)}
+#ty footer{padding:36px 0;border-top:1px solid var(--line);font-size:13px;color:#6c7077;text-align:center}
+@media(max-width:700px){#ty section{padding:52px 0}#ty .grid{grid-template-columns:1fr}#ty .hero{padding:48px 0 56px}}
+</style>
+<div id="ty">
+<header><div class="wrap"><a class="brand" href="index.html"><svg viewBox="30 20 740 570" fill="none" stroke="#FFD24D" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g stroke-width="36"><path d="M110,330 C60,300 55,220 110,170 C140,100 230,70 310,85 C360,45 460,40 520,80 C610,70 720,130 735,230 C760,290 740,360 690,390 C670,410 640,415 610,412 C560,430 520,450 470,445 C430,470 360,470 320,445 C270,455 200,430 170,400 C150,385 125,365 110,330 Z"/><path d="M592,418 C610,482 690,502 732,452 C748,420 722,395 692,396"/><path d="M452,448 C446,500 456,546 490,554 C520,550 530,516 521,470"/></g><path d="M330,90 C320,150 360,190 340,250 C335,285 350,300 340,335 M130,345 C210,315 300,325 360,355 C420,380 500,370 585,350" stroke-width="26" opacity=".7"/><path d="M250,160 L400,150 L560,150 L610,265 L430,260 L400,150 M250,160 L215,250 L430,260 M430,260 L300,380 L215,250 M560,150 L430,260" stroke-width="18"/><g fill="#FFD24D" stroke="none"><circle cx="250" cy="160" r="40"/><circle cx="400" cy="150" r="40"/><circle cx="560" cy="150" r="40"/><circle cx="215" cy="250" r="40"/><circle cx="430" cy="260" r="40"/><circle cx="610" cy="265" r="40"/><circle cx="300" cy="380" r="40"/></g></svg>The Delegated Brain</a></div></header>
+
+<section class="hero"><div class="wrap">
+ <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+ <div class="eyebrow">Your delegation call is booked</div>
+ <h1>That's one thing <span class="gold">off your list.</span></h1>
+ <p class="lead">You don't have to build anything. Here's exactly what happens between now and a working second brain, so there are no surprises.</p>
+ <div class="pill"><b>Check your inbox:</b> your calendar invite and the call link are on their way. If you don't see them in a few minutes, look in spam.</div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="eyebrow">What happens next</div>
+ <h2>Five steps. You do very few of them.</h2>
+ <ol class="tl">
+  <li class="now"><span class="n">1</span><div class="when">Now</div><h3>Confirm the invite</h3><p>Accept the calendar invite so the slot is held. Need to move it? Use the reschedule link in your confirmation email.</p></li>
+  <li><span class="n">2</span><div class="when">The call &middot; 30 minutes</div><h3>We check fit and plan the connections</h3><p>We talk through how you work, <b>which tools you want connected</b>, and what you want your brain to know. No pitch deck. If it isn't a fit, we'll tell you.</p></li>
+  <li><span class="n">3</span><div class="when">After the call</div><h3>You get the intake</h3><p>One <b>60-minute intake conversation</b>, plus a short list of the files and accounts you choose to share. That's the whole of your effort up front.</p></li>
+  <li><span class="n">4</span><div class="when">7 days</div><h3>We collect, build and connect</h3><p>We gather what you've already said, written and decided, structure it, and list every place your own records contradict each other. <b>The 7-day clock starts when we have your intake and files.</b></p></li>
+  <li><span class="n">5</span><div class="when">Handover</div><h3>The proof test</h3><p>We ask <b>20 questions you already know the answers to</b>. It has to answer them correctly, with sources. When it does, you pay the second half and it's yours. If it doesn't, we keep working at no cost.</p></li>
+ </ol>
+</div></section>
+
+<section><div class="wrap">
+ <div class="eyebrow">Before the call &middot; optional, 5 minutes</div>
+ <h2>Two things that make the call count</h2>
+ <div class="grid">
+  <div class="card"><h3>List your tools</h3><p>Jot down where your information lives today. Anything with an export, a connector or an API can feed your brain.</p>
+   <ul><li>Meetings and recordings</li><li>Email and calendar (optional)</li><li>Documents and drives</li><li>Chat and voice notes</li></ul></div>
+  <div class="card"><h3>Pick 3 questions</h3><p>Write down three questions you wish you could ask your business and get a straight answer to, for example:</p>
+   <ul><li>"What did I promise, and to whom?"</li><li>"Why did we decide that?"</li></ul></div>
+ </div>
+ <p class="note" style="margin-top:20px">You don't need to gather or send any files yet. We sort that out together.</p>
+</div></section>
+
+<section><div class="wrap">
+ <div class="eyebrow">Our promises</div>
+ <h2>What we will and won't do</h2>
+ <div class="grid">
+  <div class="card"><h3>You stay in control</h3><p>Your files stay in your own Drive. Nothing is connected without your say-so, and email and calendar are entirely your call.</p></div>
+  <div class="card"><h3>It never guesses</h3><p>Every answer cites the file it came from. Unknowns stay marked as unknown. It drafts for your review and never posts or sends as you.</p></div>
+ </div>
+ <div class="ps"><b>P.S.</b> Not sure how to answer something before the call? Don't worry about it. That's what the call is for. Bring what you have.</div>
+</div></section>
+
+<footer><div class="wrap">The Delegated Brain &middot; Kasim Aslam</div></footer>
+</div>
+</body></html>
